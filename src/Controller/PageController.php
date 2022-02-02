@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Personajes;
+use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -9,21 +11,17 @@ use Symfony\Component\Routing\Annotation\Route;
 class PageController extends AbstractController
 {
     /**
-     * @Route("/page", name="page")
+     * @Route("/", name="Inicio")
      */
-    public function index(): Response
+    public function inicio(ManagerRegistry $doctrine): Response
     {
+        $repositorio = $doctrine->getRepository(Personajes::class);
+        $personajes = $repositorio->findAll();
+
         return $this->render('page/index.html.twig', [
             'controller_name' => 'PageController',
+            'personajes' => $personajes,
         ]);
     }
-      /**
-     * @Route("/", name="inicio")
-     */
-    public function inicio(): Response
-    {
-        return $this->render('page/index.html.twig', [
-            'controller_name' => 'PageController',
-        ]);
-    }
+
 }

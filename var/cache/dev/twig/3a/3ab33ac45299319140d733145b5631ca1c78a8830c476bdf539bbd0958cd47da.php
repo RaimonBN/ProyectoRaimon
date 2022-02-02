@@ -65,7 +65,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello PageController!";
+        echo "Inicio!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -85,30 +85,43 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-    <h1>Hello ";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/home/raimon/Documentos/proyectoRaimonPagina/src/Controller/PageController.php", 0), "html", null, true);
-        echo "\">src/Controller/PageController.php</a></code></li>
-        <li>Your template at <code><a href=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/home/raimon/Documentos/proyectoRaimonPagina/templates/page/index.html.twig", 0), "html", null, true);
-        echo "\">templates/page/index.html.twig</a></code></li>
-    </ul>
-</div>
+        echo "<!--navbar!-->
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+  <div class=\"container-fluid\">
+    <a class=\"navbar-brand\" href=\"templates/page/index.html.twig\">LoLWiki!</a>
+    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+      <span class=\"navbar-toggler-icon\"></span>
+    </button>
+    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+      <ul class=\"navbar-nav\">
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"#\">Features</a>
+        </li>
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"#\">Pricing</a>
+        </li>
+        <li class=\"nav-item\">
+          <a class=\"nav-link disabled\">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--navbar!-->
 ";
+        // line 29
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["personajes"]) || array_key_exists("personajes", $context) ? $context["personajes"] : (function () { throw new RuntimeError('Variable "personajes" does not exist.', 29, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["personaje"]) {
+            // line 30
+            echo "    <li class=\"personajes\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["personaje"], "nombre", [], "any", false, false, false, 30), "html", null, true);
+            echo "</li>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['personaje'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -129,30 +142,42 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
     public function getDebugInfo()
     {
-        return array (  107 => 17,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  117 => 30,  113 => 29,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello PageController!{% endblock %}
+{% block title %}Inicio!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"{{ '/home/raimon/Documentos/proyectoRaimonPagina/src/Controller/PageController.php'|file_link(0) }}\">src/Controller/PageController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ '/home/raimon/Documentos/proyectoRaimonPagina/templates/page/index.html.twig'|file_link(0) }}\">templates/page/index.html.twig</a></code></li>
-    </ul>
-</div>
+<!--navbar!-->
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+  <div class=\"container-fluid\">
+    <a class=\"navbar-brand\" href=\"templates/page/index.html.twig\">LoLWiki!</a>
+    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+      <span class=\"navbar-toggler-icon\"></span>
+    </button>
+    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+      <ul class=\"navbar-nav\">
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"#\">Features</a>
+        </li>
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"#\">Pricing</a>
+        </li>
+        <li class=\"nav-item\">
+          <a class=\"nav-link disabled\">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--navbar!-->
+{% for personaje in personajes %}
+    <li class=\"personajes\">{{ personaje.nombre}}</li>
+    {% endfor %}
 {% endblock %}
 ", "page/index.html.twig", "/home/raimon/Documentos/proyectoRaimonPagina/templates/page/index.html.twig");
     }
