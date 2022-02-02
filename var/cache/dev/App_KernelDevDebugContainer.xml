@@ -339,6 +339,14 @@
         <argument type="service" id=".service_locator.GNc8e5B.App\Controller\PageController"/>
       </call>
     </service>
+    <service id="App\Repository\PersonajesRepository" class="App\Repository\PersonajesRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\RegionesRepository" class="App\Repository\RegionesRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="argument_metadata_factory" class="Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactory"/>
     <service id="response_listener" class="Symfony\Component\HttpKernel\EventListener\ResponseListener">
       <tag name="kernel.event_subscriber"/>
@@ -3754,7 +3762,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.Xbsa8iG"/>
+      <argument type="service" id=".service_locator.UO_nNdS"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -5625,6 +5633,10 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PageController" class="App\Controller\PageController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PageController" class="App\Controller\PageController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\PageController" class="App\Controller\PageController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PersonajesRepository" class="App\Repository\PersonajesRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\PersonajesRepository" class="App\Repository\PersonajesRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\RegionesRepository" class="App\Repository\RegionesRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\RegionesRepository" class="App\Repository\RegionesRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.gSv9zYw" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6047,9 +6059,12 @@
       <argument type="service" id="cache.doctrine.orm.default.result"/>
       <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
     </service>
-    <service id=".service_locator.Xbsa8iG" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.UO_nNdS" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
-      <argument type="collection"/>
+      <argument type="collection">
+        <argument key="App\Repository\PersonajesRepository" type="service_closure" id="App\Repository\PersonajesRepository"/>
+        <argument key="App\Repository\RegionesRepository" type="service_closure" id="App\Repository\RegionesRepository"/>
+      </argument>
     </service>
     <service id=".service_locator.KLVvNIq" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
