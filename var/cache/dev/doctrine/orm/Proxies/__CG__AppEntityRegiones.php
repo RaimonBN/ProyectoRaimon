@@ -66,10 +66,10 @@ class Regiones extends \App\Entity\Regiones implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'descripcion'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'descripcion', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'imagen'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'descripcion'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'descripcion', '' . "\0" . 'App\\Entity\\Regiones' . "\0" . 'imagen'];
     }
 
     /**
@@ -233,6 +233,28 @@ class Regiones extends \App\Entity\Regiones implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDescripcion', [$descripcion]);
 
         return parent::setDescripcion($descripcion);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getImagen(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImagen', []);
+
+        return parent::getImagen();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setImagen(string $imagen): \App\Entity\Regiones
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setImagen', [$imagen]);
+
+        return parent::setImagen($imagen);
     }
 
 }

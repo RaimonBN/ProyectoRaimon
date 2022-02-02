@@ -38,6 +38,11 @@ class Personajes
      */
     private $rol;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $imagen;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -87,6 +92,18 @@ class Personajes
     public function setRol(string $rol): self
     {
         $this->rol = $rol;
+
+        return $this;
+    }
+
+    public function getImagen(): ?string
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen(string $imagen): self
+    {
+        $this->imagen = $imagen;
 
         return $this;
     }

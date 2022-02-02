@@ -3,30 +3,25 @@
 {% block title %}Inicio!{% endblock %}
 
 {% block body %}
-<!--navbar!-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="templates/page/index.html.twig">LoLWiki!</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-    </div>
+
+{{include ("/partials/navbar.html.twig")}}
+<!--regiones-->
+{% for region in regiones %}
+<div style = " flex-direction:row;">
+<div class="card">
+  <img src="{{region.imagen}}" class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title">{{region.nombre}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-</nav>
-<!--navbar!-->
-{% for personaje in personajes %}
-    <li class="personajes">{{ personaje.nombre}}</li>
-    {% endfor %}
+</div>
+<!--regiones-->
+{% endfor %}
+
+<!--{% for personaje in personajes %}
+    <li class="personajes">{{ personaje.imagen}}</li>
+    {% endfor %}!-->
+
+  {{include ("/partials/footer.html.twig")}}
 {% endblock %}
