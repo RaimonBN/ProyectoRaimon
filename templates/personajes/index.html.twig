@@ -3,8 +3,9 @@
 {% block title %}Inicio!{% endblock %}
 
 {% block body %}
+{{include ("/partials/navbar.html.twig")}}
 
-<!--regiones-->
+<!--personajes-->
 {% for personaje in personajes %}
 <div style = " flex-direction:row;">
 <div class="card">
@@ -15,7 +16,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-<!--regiones-->
+<!--personajes-->
 {% endfor %}
 
 {{include ("/partials/footer.html.twig")}}

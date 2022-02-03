@@ -5,6 +5,7 @@
 {% block body %}
 
 {{include ("/partials/navbar.html.twig")}}
+
 <!--regiones-->
 {% for region in regiones %}
 <div style = " flex-direction:row;">
@@ -12,16 +13,15 @@
   <img src="{{region.imagen}}" class="card-img-top" >
   <div class="card-body">
     <h5 class="card-title">{{region.nombre}}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="card-text">{{region.descripcion}}</p>
+    <a href="/region/{{region.nombre}}" class="btn btn-primary">Visita {{region.nombre}}</a>
   </div>
 </div>
 <!--regiones-->
+
 {% endfor %}
 
-<!--{% for personaje in personajes %}
-    <li class="personajes">{{ personaje.imagen}}</li>
-    {% endfor %}!-->
+
 
   {{include ("/partials/footer.html.twig")}}
 {% endblock %}

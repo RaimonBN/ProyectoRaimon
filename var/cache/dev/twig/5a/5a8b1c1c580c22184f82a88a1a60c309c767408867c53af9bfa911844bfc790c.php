@@ -43,21 +43,19 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
         echo "    <!--navbar!-->
 <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
   <div class=\"container-fluid\">
-    <a class=\"navbar-brand\" href=\"\">LoLWiki!</a>
+    <a class=\"navbar-brand\" href=\"/\">LoLWiki!</a>
     <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
       <span class=\"navbar-toggler-icon\"></span>
     </button>
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
       <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Features</a>
+          <a class=\"nav-link\" href=\"/personajes\">Personajes!</a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"#\">Pricing</a>
         </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link disabled\">Disabled</a>
-        </li>
+       
       </ul>
     </div>
   </div>
@@ -87,21 +85,19 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
         return new Source("    <!--navbar!-->
 <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
   <div class=\"container-fluid\">
-    <a class=\"navbar-brand\" href=\"\">LoLWiki!</a>
+    <a class=\"navbar-brand\" href=\"/\">LoLWiki!</a>
     <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
       <span class=\"navbar-toggler-icon\"></span>
     </button>
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
       <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Features</a>
+          <a class=\"nav-link\" href=\"/personajes\">Personajes!</a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"#\">Pricing</a>
         </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link disabled\">Disabled</a>
-        </li>
+       
       </ul>
     </div>
   </div>

@@ -16,5 +16,6 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'Inicio' => [[], ['_controller' => 'App\\Controller\\PageController::inicio'], [], [['text', '/']], [], [], []],
     'Personajes' => [[], ['_controller' => 'App\\Controller\\PersonajesController::inicio'], [], [['text', '/personajes']], [], [], []],
+    'regiones' => [['texto'], ['_controller' => 'App\\Controller\\RegionesController::index'], [], [['variable', '/', '[^/]++', 'texto', true], ['text', '/region']], [], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
 ];

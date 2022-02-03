@@ -18,7 +18,7 @@ class PersonajesController extends AbstractController
         $repositorio = $doctrine->getRepository(Personajes::class);
         $personajes = $repositorio->findAll();
 
-        return $this->render('page/index.html.twig', [
+        return $this->render('personajes/index.html.twig', [
             'controller_name' => 'PageController',
             'personajes' => $personajes,
         ]);

@@ -33,6 +33,7 @@ return [
                     .')'
                     .'|error/(\\d+)(?:\\.([^/]++))?(*:159)'
                 .')'
+                .'|/region/([^/]++)(*:184)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -42,8 +43,9 @@ return [
         101 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         114 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         124 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        159 => [
-            [['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null],
+        159 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
+        184 => [
+            [['_route' => 'regiones', '_controller' => 'App\\Controller\\RegionesController::index'], ['texto'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],
