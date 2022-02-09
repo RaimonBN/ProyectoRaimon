@@ -43,6 +43,11 @@ class Personajes
      */
     private $imagen;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $descripcion;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -104,6 +109,18 @@ class Personajes
     public function setImagen(string $imagen): self
     {
         $this->imagen = $imagen;
+
+        return $this;
+    }
+
+    public function getDescripcion(): ?string
+    {
+        return $this->descripcion;
+    }
+
+    public function setDescripcion(string $descripcion): self
+    {
+        $this->descripcion = $descripcion;
 
         return $this;
     }

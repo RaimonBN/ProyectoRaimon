@@ -1,15 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Inicio!{% endblock %}
+{% block title %}Personajes!{% endblock %}
 
 {% block body %}
 {{include ("/partials/navbar.html.twig")}}
 
 <!--personajes-->
+{% if personajes %}
 {% for personaje in personajes %}
 {{include ("/partials/ficha_personaje.html.twig")}}
-<!--personajes-->
-{% endfor %}
 
+{% endfor %}
+{% else %}
+<h2>No hemos encontrado tu búsqueda!</h2><br>
+<h3>Por favor, comprueba que hayas escrito bien el nombre del personaje!</h3>
+{% endif %}
 {{include ("/partials/footer.html.twig")}}
 {% endblock %}

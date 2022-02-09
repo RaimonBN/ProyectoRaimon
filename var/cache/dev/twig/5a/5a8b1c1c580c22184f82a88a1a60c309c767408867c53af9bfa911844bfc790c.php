@@ -51,13 +51,13 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
       <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"/personajes\">Personajes!</a>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Pricing</a>
-        </li>
-       
+        </li>   
       </ul>
     </div>
+    <div>
+      <form class=\"form-inline my-2 my-lg-0\" style=\"display:flex\">
+      <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\" id=\"texto_buscador\">
+      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\" id=\"buscador\">Search</button>
   </div>
 </nav>
 <!--navbar-->
@@ -93,13 +93,13 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
       <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"/personajes\">Personajes!</a>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Pricing</a>
-        </li>
-       
+        </li>   
       </ul>
     </div>
+    <div>
+      <form class=\"form-inline my-2 my-lg-0\" style=\"display:flex\">
+      <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\" id=\"texto_buscador\">
+      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\" id=\"buscador\">Search</button>
   </div>
 </nav>
 <!--navbar-->

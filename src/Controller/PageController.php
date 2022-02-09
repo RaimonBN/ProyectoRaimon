@@ -4,6 +4,7 @@ namespace App\Controller;
 
 
 use App\Entity\Regiones;
+use App\Entity\Personajes;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -25,6 +26,17 @@ class PageController extends AbstractController
             'controller_name' => 'PageController',
             'regiones' => $regiones,
         ]);
+    }
+    
+    /**
+     * @Route("/buscar/{texto}", name="Busqueda")
+     */
+    public function buscar(ManagerRegistry $doctrine, $texto): Response{
+       
+        $repositorio = $doctrine->getRepository(Personajes::class);
+        $personajes = $repositorio->findByName($texto);
+
+        return $this->render('lista_personajes.html.twig', ['personajes' => $personajes]);
     }
 
 }

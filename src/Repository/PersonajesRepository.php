@@ -18,6 +18,14 @@ class PersonajesRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Personajes::class);
     }
+    public function findByName($text): array
+    {
+        $qb = $this->createQueryBuilder('p')
+        ->andWhere('p.nombre LIKE :text')
+        ->setParameter('text','%'.$text.'%')
+        ->getQuery();
+        return $qb->execute();
+    }
 
     // /**
     //  * @return Personajes[] Returns an array of Personajes objects

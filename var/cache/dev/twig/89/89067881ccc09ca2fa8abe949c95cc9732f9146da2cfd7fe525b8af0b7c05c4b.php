@@ -57,18 +57,18 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
         // line 8
         echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 13
+        // line 14
         echo "
         ";
-        // line 14
+        // line 15
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 16
+        // line 21
         echo "    </head>
     <body>
       ";
-        // line 18
+        // line 23
         $this->displayBlock('body', $context, $blocks);
-        // line 21
+        // line 26
         echo "    </body>
 </html>
 
@@ -114,6 +114,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
         echo "            <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
             <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
             <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">
+            <link rel=\"stylesheet\" href=\"/public/css/mainCSS.css\">
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -123,7 +124,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
     }
 
-    // line 14
+    // line 15
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -133,8 +134,12 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 15
-        echo "<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>        ";
+        // line 16
+        echo "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>       
+    <script src=\"https://code.jquery.com/jquery-3.6.0.slim.js\" integrity=\"sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=\" crossorigin=\"anonymous\"></script>
+    <script type=\"text/javascript\" src=\"/js/buscar.js\"></script>
+
+ ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -143,7 +148,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
     }
 
-    // line 18
+    // line 23
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -153,7 +158,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 19
+        // line 24
         echo "
     ";
         
@@ -171,7 +176,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
     public function getDebugInfo()
     {
-        return array (  157 => 19,  147 => 18,  137 => 15,  127 => 14,  114 => 9,  104 => 8,  85 => 5,  72 => 21,  70 => 18,  66 => 16,  64 => 14,  61 => 13,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  162 => 24,  152 => 23,  138 => 16,  128 => 15,  114 => 9,  104 => 8,  85 => 5,  72 => 26,  70 => 23,  66 => 21,  64 => 15,  61 => 14,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -187,10 +192,15 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
             <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
             <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
             <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">
+            <link rel=\"stylesheet\" href=\"/public/css/mainCSS.css\">
         {% endblock %}
 
         {% block javascripts %}
-<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>        {% endblock %}
+    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>       
+    <script src=\"https://code.jquery.com/jquery-3.6.0.slim.js\" integrity=\"sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=\" crossorigin=\"anonymous\"></script>
+    <script type=\"text/javascript\" src=\"/js/buscar.js\"></script>
+
+ {% endblock %}
     </head>
     <body>
       {% block body %}
