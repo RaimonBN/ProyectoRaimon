@@ -11,16 +11,16 @@ use Symfony\Component\Routing\Annotation\Route;
 class RegionesController extends AbstractController
 {
     /**
-     * @Route("/region/{texto}", name="regiones")
+     * @Route("/region/{texto}/{id}", name="regiones")
      */
-    public function index(ManagerRegistry $doctrine): Response
+    public function index(ManagerRegistry $doctrine,$id): Response
     {
         $repositorio = $doctrine->getRepository(Regiones::class);
-        $regiones = $repositorio->findAll();
+        $region = $repositorio->find($id);
 
         return $this->render('regiones/index.html.twig', [
             'controller_name' => 'RegionesController',
-            'regiones' => $regiones,
+            'region' => $region,
 
         ]);
     }

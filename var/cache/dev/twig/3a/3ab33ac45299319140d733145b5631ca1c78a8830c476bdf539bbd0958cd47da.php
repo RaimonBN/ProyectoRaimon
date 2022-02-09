@@ -116,6 +116,8 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
     <a href=\"/region/";
             // line 17
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 17), "html", null, true);
+            echo "/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 17), "html", null, true);
             echo "\" class=\"btn btn-primary\">Visita ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 17), "html", null, true);
             echo "</a>
@@ -157,7 +159,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
     public function getDebugInfo()
     {
-        return array (  137 => 26,  132 => 23,  118 => 17,  114 => 16,  110 => 15,  105 => 13,  101 => 11,  97 => 10,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  139 => 26,  134 => 23,  118 => 17,  114 => 16,  110 => 15,  105 => 13,  101 => 11,  97 => 10,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -178,7 +180,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
   <div class=\"card-body\">
     <h5 class=\"card-title\">{{region.nombre}}</h5>
     <p class=\"card-text\">{{region.descripcion}}</p>
-    <a href=\"/region/{{region.nombre}}\" class=\"btn btn-primary\">Visita {{region.nombre}}</a>
+    <a href=\"/region/{{region.nombre}}/{{region.id}}\" class=\"btn btn-primary\">Visita {{region.nombre}}</a>
   </div>
 </div>
 <!--regiones-->
