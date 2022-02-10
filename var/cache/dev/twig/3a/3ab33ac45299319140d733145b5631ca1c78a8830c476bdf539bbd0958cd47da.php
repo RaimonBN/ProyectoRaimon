@@ -124,18 +124,28 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
   </div>
 </div>
 <!--regiones-->
-
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['region'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 23
+        // line 22
         echo "
+<!-- Video YT -->
+<div id=\"contenedor_arcane\">
+
+<h1 id=\"titulo_video\">Arcane! La serie original de League of Legends! </h1>
+<div id=\"video\">
+<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iKJ-coaQmBE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+</div>
+<button class=\"button\" style=\"vertical-align:middle\"><span>¿¡Arcane!? </span></button>
+
+</div>
+<!-- Video YT -->
 
 
   ";
-        // line 26
+        // line 36
         echo twig_include($this->env, $context, "/partials/footer.html.twig");
         echo "
 ";
@@ -159,7 +169,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
     public function getDebugInfo()
     {
-        return array (  139 => 26,  134 => 23,  118 => 17,  114 => 16,  110 => 15,  105 => 13,  101 => 11,  97 => 10,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  149 => 36,  133 => 22,  118 => 17,  114 => 16,  110 => 15,  105 => 13,  101 => 11,  97 => 10,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -184,9 +194,19 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
   </div>
 </div>
 <!--regiones-->
-
 {% endfor %}
 
+<!-- Video YT -->
+<div id=\"contenedor_arcane\">
+
+<h1 id=\"titulo_video\">Arcane! La serie original de League of Legends! </h1>
+<div id=\"video\">
+<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iKJ-coaQmBE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+</div>
+<button class=\"button\" style=\"vertical-align:middle\"><span>¿¡Arcane!? </span></button>
+
+</div>
+<!-- Video YT -->
 
 
   {{include (\"/partials/footer.html.twig\")}}

@@ -2,3 +2,66 @@
     
     align-content: center;
 }
+#contenedor_arcane{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#contenedor_arcane > div{
+    margin: 20px;
+}
+#video{
+    display: flex;
+    justify-content: center;
+}
+#titulo_video{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+#mas{
+    position: relative;
+    width: 10%;
+    margin: auto;
+    display: inline-block;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
