@@ -1,15 +1,31 @@
-$ (document).ready(function(){
+onload = function(){
+
+    if (window.XMLHttpRequest) {
+        
+        request = new XMLHttpRequest();
     
-    $("#arcane_boton").click(function(){
-        $.ajax({
-           
-            url:"/js/saber.txt",
-            success: function(response){
-                $("#contenedor_saber").html(response)
+    }
+
+    document.getElementById("arcane_boton").onclick = sacardatos
+
+}
+
+    function sacardatos(){
+
+        if(request) {
+
+            request.open("GET", "/js/saber.txt");
+
+            request.onreadystatechange = function(){
+
+                if (request.readyState == 4 && request.status == 200) {
+
+                    document.getElementById("contenedor_saber").innerHTML = request.responseText;
+                }
             }
-        })
 
-    })
-   
-})
 
+        request.send(null);
+    }
+}
+                                      
