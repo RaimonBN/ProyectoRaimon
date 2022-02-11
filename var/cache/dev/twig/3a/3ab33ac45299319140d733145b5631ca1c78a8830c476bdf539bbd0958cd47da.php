@@ -74,7 +74,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
     }
 
-    // line 5
+    // line 6
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,53 +84,53 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
+        // line 7
         echo "
 ";
-        // line 7
+        // line 8
         echo twig_include($this->env, $context, "/partials/navbar.html.twig");
         echo "
 
 <!--regiones-->
 ";
-        // line 10
+        // line 11
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["regiones"]) || array_key_exists("regiones", $context) ? $context["regiones"] : (function () { throw new RuntimeError('Variable "regiones" does not exist.', 10, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["regiones"]) || array_key_exists("regiones", $context) ? $context["regiones"] : (function () { throw new RuntimeError('Variable "regiones" does not exist.', 11, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["region"]) {
-            // line 11
+            // line 12
             echo "<div style = \" flex-direction:row;\">
 <div class=\"card\">
   <img src=\"";
-            // line 13
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "imagen", [], "any", false, false, false, 13), "html", null, true);
+            // line 14
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "imagen", [], "any", false, false, false, 14), "html", null, true);
             echo "\" class=\"card-img-top\" >
   <div class=\"card-body\">
     <h5 class=\"card-title\">";
-            // line 15
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 15), "html", null, true);
+            // line 16
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 16), "html", null, true);
             echo "</h5>
     <p class=\"card-text\">";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "descripcion", [], "any", false, false, false, 16), "html", null, true);
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "descripcion", [], "any", false, false, false, 17), "html", null, true);
             echo "</p>
     <a href=\"/region/";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 17), "html", null, true);
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 18), "html", null, true);
             echo "/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 17), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 18), "html", null, true);
             echo "\" class=\"btn btn-primary\">Visita ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 17), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 18), "html", null, true);
             echo "</a>
   </div>
 </div>
-<!--regiones-->
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['region'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 22
-        echo "
+        echo "<!--regiones-->
+
 <!-- Video YT -->
 <div id=\"contenedor_arcane\">
 
@@ -138,14 +138,20 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 <div id=\"video\">
 <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iKJ-coaQmBE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
 </div>
-<button class=\"button\" style=\"vertical-align:middle\"><span>¿¡Arcane!? </span></button>
 
-</div>
 <!-- Video YT -->
+
+<!-- INFO ARCANE -->
+<input type=\"button\" id=\"arcane_boton\" value=\"Arcane\">
+<div id=\"contenedor_saber\" style=\"background-color:#bfa6a2;\">
+  </div>
+<!-- INFO ARCANE -->
+</div>
+
 
 
   ";
-        // line 36
+        // line 43
         echo twig_include($this->env, $context, "/partials/footer.html.twig");
         echo "
 ";
@@ -169,7 +175,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
     public function getDebugInfo()
     {
-        return array (  149 => 36,  133 => 22,  118 => 17,  114 => 16,  110 => 15,  105 => 13,  101 => 11,  97 => 10,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  155 => 43,  132 => 22,  118 => 18,  114 => 17,  110 => 16,  105 => 14,  101 => 12,  97 => 11,  91 => 8,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -177,6 +183,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         return new Source("{% extends 'base.html.twig' %}
 
 {% block title %}Inicio!{% endblock %}
+
 
 {% block body %}
 
@@ -193,8 +200,8 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
     <a href=\"/region/{{region.nombre}}/{{region.id}}\" class=\"btn btn-primary\">Visita {{region.nombre}}</a>
   </div>
 </div>
-<!--regiones-->
 {% endfor %}
+<!--regiones-->
 
 <!-- Video YT -->
 <div id=\"contenedor_arcane\">
@@ -203,10 +210,16 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 <div id=\"video\">
 <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iKJ-coaQmBE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
 </div>
-<button class=\"button\" style=\"vertical-align:middle\"><span>¿¡Arcane!? </span></button>
 
-</div>
 <!-- Video YT -->
+
+<!-- INFO ARCANE -->
+<input type=\"button\" id=\"arcane_boton\" value=\"Arcane\">
+<div id=\"contenedor_saber\" style=\"background-color:#bfa6a2;\">
+  </div>
+<!-- INFO ARCANE -->
+</div>
+
 
 
   {{include (\"/partials/footer.html.twig\")}}

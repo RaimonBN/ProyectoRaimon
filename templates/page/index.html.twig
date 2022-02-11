@@ -2,6 +2,7 @@
 
 {% block title %}Inicio!{% endblock %}
 
+
 {% block body %}
 
 {{include ("/partials/navbar.html.twig")}}
@@ -17,8 +18,8 @@
     <a href="/region/{{region.nombre}}/{{region.id}}" class="btn btn-primary">Visita {{region.nombre}}</a>
   </div>
 </div>
-<!--regiones-->
 {% endfor %}
+<!--regiones-->
 
 <!-- Video YT -->
 <div id="contenedor_arcane">
@@ -27,10 +28,16 @@
 <div id="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iKJ-coaQmBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<button class="button" style="vertical-align:middle"><span>¿¡Arcane!?</span></button>
 
-</div>
 <!-- Video YT -->
+
+<!-- INFO ARCANE -->
+<input type="button" id="arcane_boton" value="Arcane">
+<div id="contenedor_saber" style="background-color:#bfa6a2;">
+  </div>
+<!-- INFO ARCANE -->
+</div>
+
 
 
   {{include ("/partials/footer.html.twig")}}
