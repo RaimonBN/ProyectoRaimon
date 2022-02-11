@@ -98,27 +98,23 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         $context['_seq'] = twig_ensure_traversable((isset($context["regiones"]) || array_key_exists("regiones", $context) ? $context["regiones"] : (function () { throw new RuntimeError('Variable "regiones" does not exist.', 11, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["region"]) {
             // line 12
-            echo "<div style = \" flex-direction:row;\">
+            echo "<h2 class=\"card-title\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 12), "html", null, true);
+            echo "</h5>
+<div style = \" flex-direction:row;\">
 <div class=\"card\">
   <img src=\"";
-            // line 14
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "imagen", [], "any", false, false, false, 14), "html", null, true);
+            // line 15
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "imagen", [], "any", false, false, false, 15), "html", null, true);
             echo "\" class=\"card-img-top\" >
   <div class=\"card-body\">
-    <h5 class=\"card-title\">";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 16), "html", null, true);
-            echo "</h5>
-    <p class=\"card-text\">";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "descripcion", [], "any", false, false, false, 17), "html", null, true);
-            echo "</p>
+    
     <a href=\"/region/";
             // line 18
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 18), "html", null, true);
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 18), "html", null, true);
-            echo "\" class=\"btn btn-primary\">Visita ";
+            echo "\" class=\"btn btn-info\">Visita ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 18), "html", null, true);
             echo "</a>
   </div>
@@ -175,7 +171,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
     public function getDebugInfo()
     {
-        return array (  155 => 43,  132 => 22,  118 => 18,  114 => 17,  110 => 16,  105 => 14,  101 => 12,  97 => 11,  91 => 8,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
+        return array (  151 => 43,  128 => 22,  114 => 18,  108 => 15,  101 => 12,  97 => 11,  91 => 8,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -191,13 +187,13 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
 <!--regiones-->
 {% for region in regiones %}
+<h2 class=\"card-title\">{{region.nombre}}</h5>
 <div style = \" flex-direction:row;\">
 <div class=\"card\">
   <img src=\"{{region.imagen}}\" class=\"card-img-top\" >
   <div class=\"card-body\">
-    <h5 class=\"card-title\">{{region.nombre}}</h5>
-    <p class=\"card-text\">{{region.descripcion}}</p>
-    <a href=\"/region/{{region.nombre}}/{{region.id}}\" class=\"btn btn-primary\">Visita {{region.nombre}}</a>
+    
+    <a href=\"/region/{{region.nombre}}/{{region.id}}\" class=\"btn btn-info\">Visita {{region.nombre}}</a>
   </div>
 </div>
 {% endfor %}

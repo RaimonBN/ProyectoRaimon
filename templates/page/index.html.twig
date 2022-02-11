@@ -9,13 +9,12 @@
 
 <!--regiones-->
 {% for region in regiones %}
+<h2 class="card-title">{{region.nombre}}</h5>
 <div style = " flex-direction:row;">
 <div class="card">
   <img src="{{region.imagen}}" class="card-img-top" >
   <div class="card-body">
-    <h5 class="card-title">{{region.nombre}}</h5>
-    <p class="card-text">{{region.descripcion}}</p>
-    <a href="/region/{{region.nombre}}/{{region.id}}" class="btn btn-primary">Visita {{region.nombre}}</a>
+    <a href="/region/{{region.nombre}}/{{region.id}}" class="btn btn-info">Visita {{region.nombre}}</a>
   </div>
 </div>
 {% endfor %}

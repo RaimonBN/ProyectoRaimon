@@ -32,6 +32,11 @@ class Regiones
      */
     private $imagen;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $video;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +74,18 @@ class Regiones
     public function setImagen(string $imagen): self
     {
         $this->imagen = $imagen;
+
+        return $this;
+    }
+
+    public function getVideo(): ?string
+    {
+        return $this->video;
+    }
+
+    public function setVideo(string $video): self
+    {
+        $this->video = $video;
 
         return $this;
     }

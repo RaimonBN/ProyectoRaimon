@@ -1,11 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello RegionesController!{% endblock %}
+{% block title %}Regiones!{% endblock %}
 
 {% block body %}
 {{include ("/partials/navbar.html.twig")}}
 
-<h1>Región : {{region.nombre}}</h1>
+<h1>{{region.nombre}}</h1>
+<h5>¿Cuál es la historia de esta región?</h5>
+<h5>{{region.descripcion}}</h5>
+<p>*Aquí puedes ver un vídeo de {{region.nombre}} :</p>
+<iframe width="560" height="315" src="{{region.video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {{include ("/partials/footer.html.twig")}}
 

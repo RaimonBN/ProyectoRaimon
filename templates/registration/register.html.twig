@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block body %}
+{{include ('partials/navbar.html.twig')}}
+    <h1>Registro</h1>
+
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <button type="submit" class="btn">Register</button>
+        Ya estás registrado?? <a href="/login">Inicia sesión</a>
+    {{ form_end(registrationForm) }}
+{% endblock %}
