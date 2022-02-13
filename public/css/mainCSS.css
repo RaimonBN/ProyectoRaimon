@@ -40,3 +40,12 @@
     margin: auto;
     margin-bottom: 10px;
   }
+
+#personajes_grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+}

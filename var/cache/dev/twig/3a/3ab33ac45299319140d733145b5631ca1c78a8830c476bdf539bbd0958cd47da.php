@@ -108,14 +108,13 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "imagen", [], "any", false, false, false, 15), "html", null, true);
             echo "\" class=\"card-img-top\" >
   <div class=\"card-body\">
-    
     <a href=\"/region/";
-            // line 18
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 18), "html", null, true);
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 17), "html", null, true);
             echo "/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 18), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 17), "html", null, true);
             echo "\" class=\"btn btn-info\">Visita ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 18), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 17), "html", null, true);
             echo "</a>
   </div>
 </div>
@@ -124,7 +123,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['region'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 22
+        // line 21
         echo "<!--regiones-->
 
 <!-- Video YT -->
@@ -147,7 +146,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
 
   ";
-        // line 43
+        // line 42
         echo twig_include($this->env, $context, "/partials/footer.html.twig");
         echo "
 ";
@@ -171,7 +170,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
     public function getDebugInfo()
     {
-        return array (  151 => 43,  128 => 22,  114 => 18,  108 => 15,  101 => 12,  97 => 11,  91 => 8,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
+        return array (  150 => 42,  127 => 21,  113 => 17,  108 => 15,  101 => 12,  97 => 11,  91 => 8,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -192,7 +191,6 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 <div class=\"card\">
   <img src=\"{{region.imagen}}\" class=\"card-img-top\" >
   <div class=\"card-body\">
-    
     <a href=\"/region/{{region.nombre}}/{{region.id}}\" class=\"btn btn-info\">Visita {{region.nombre}}</a>
   </div>
 </div>
