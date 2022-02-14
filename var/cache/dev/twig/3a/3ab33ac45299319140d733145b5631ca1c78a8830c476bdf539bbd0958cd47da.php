@@ -65,7 +65,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Inicio!";
+        echo "LoLWiki!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -177,7 +177,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Inicio!{% endblock %}
+{% block title %}LoLWiki!{% endblock %}
 
 
 {% block body %}
