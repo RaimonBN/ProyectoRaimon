@@ -68,7 +68,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
       ";
         // line 28
         $this->displayBlock('body', $context, $blocks);
-        // line 31
+        // line 32
         echo "    </body>
 </html>
 
@@ -138,7 +138,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
         // line 18
         echo "    <script src=\"https://code.jquery.com/jquery-3.6.0.js\" type=\"text/javascript\"></script>
-     <script src=\"https://code.jquery.com/ui/1.13.1/jquery-ui.js\"></script>
+    <script src=\"https://code.jquery.com/ui/1.13.1/jquery-ui.js\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>       
     <script type=\"text/javascript\" src=\"/js/buscar.js\"></script>
     <script type=\"text/javascript\" src=\"/js/arcaneAjax.js\"></script>
@@ -164,7 +164,10 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 29
+        echo "    ";
+        echo twig_include($this->env, $context, "partials/footer.html.twig");
         echo "
+
     ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -181,7 +184,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
     public function getDebugInfo()
     {
-        return array (  167 => 29,  157 => 28,  140 => 18,  130 => 17,  114 => 9,  104 => 8,  85 => 5,  72 => 31,  70 => 28,  66 => 26,  64 => 17,  61 => 16,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  167 => 29,  157 => 28,  140 => 18,  130 => 17,  114 => 9,  104 => 8,  85 => 5,  72 => 32,  70 => 28,  66 => 26,  64 => 17,  61 => 16,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -204,7 +207,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
         {% block javascripts %}
     <script src=\"https://code.jquery.com/jquery-3.6.0.js\" type=\"text/javascript\"></script>
-     <script src=\"https://code.jquery.com/ui/1.13.1/jquery-ui.js\"></script>
+    <script src=\"https://code.jquery.com/ui/1.13.1/jquery-ui.js\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>       
     <script type=\"text/javascript\" src=\"/js/buscar.js\"></script>
     <script type=\"text/javascript\" src=\"/js/arcaneAjax.js\"></script>
@@ -214,6 +217,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
     </head>
     <body>
       {% block body %}
+    {{include ('partials/footer.html.twig')}}
 
     {% endblock %}
     </body>

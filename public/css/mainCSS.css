@@ -49,11 +49,11 @@
 }
 body{
     background-image: url("../media/lolfondo.webp");
-    background-size: cover;
+    background-size:auto;
 }
 footer{
     width: 100%;
-    bottom: 0;
+    bottom:auto;
     position: absolute;
 }
 
