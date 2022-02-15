@@ -56,4 +56,7 @@ footer{
     bottom:auto;
     position: absolute;
 }
+#img{
+    display: center;
+}
 

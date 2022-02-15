@@ -12,7 +12,6 @@
 <!--personajes-->
 {% endfor %}
 
-
 <!--acordeon info-->
 <div id="accordion">
  <h3>Section 1</h3>
@@ -63,5 +62,13 @@
  </div>
 </div>
 <!--acordeon info-->
+
+<!-- imagen_oculta -->
+    <button id="show">Mostrar Imagen</button>
+    <button id="hide">Ocultar Imagen</button>
+
+    <img src="/media/garen.jpg" style="display:none;"  height="300" width="250" id="img">
+<!-- imagen_oculta -->
+
 {{include ("/partials/footer.html.twig")}}
 {% endblock %}
