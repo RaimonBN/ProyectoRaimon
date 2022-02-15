@@ -18,6 +18,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-align: center;
+    background-color: #c28d8d;
 }
 #mas{
     position: relative;
@@ -60,3 +61,7 @@ footer{
     display: center;
 }
 
+#nombre-regiones{
+    background-color: #c28d8d;
+    width: 130px;
+}

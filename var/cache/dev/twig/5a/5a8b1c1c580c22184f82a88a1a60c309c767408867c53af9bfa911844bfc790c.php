@@ -56,7 +56,8 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
     </div>
         <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"/register\">Regístrate!</a>
+        
+          <a class=\"nav-link\" href=\"/login\">Inicia Sesión!</a>
         </li>   
       </ul>
     <div>
@@ -104,7 +105,8 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
     </div>
         <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"/register\">Regístrate!</a>
+        
+          <a class=\"nav-link\" href=\"/login\">Inicia Sesión!</a>
         </li>   
       </ul>
     <div>

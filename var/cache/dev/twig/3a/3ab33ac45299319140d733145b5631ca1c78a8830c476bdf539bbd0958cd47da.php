@@ -98,9 +98,9 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
         $context['_seq'] = twig_ensure_traversable((isset($context["regiones"]) || array_key_exists("regiones", $context) ? $context["regiones"] : (function () { throw new RuntimeError('Variable "regiones" does not exist.', 11, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["region"]) {
             // line 12
-            echo "<h2 class=\"card-title\">";
+            echo "<h2 class=\"card-title\" id=\"nombre-regiones\">";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["region"], "nombre", [], "any", false, false, false, 12), "html", null, true);
-            echo "</h5>
+            echo "</h2>
 <div style = \" flex-direction:row;\">
 <div class=\"card\">
   <img src=\"";
@@ -186,7 +186,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
 <!--regiones-->
 {% for region in regiones %}
-<h2 class=\"card-title\">{{region.nombre}}</h5>
+<h2 class=\"card-title\" id=\"nombre-regiones\">{{region.nombre}}</h2>
 <div style = \" flex-direction:row;\">
 <div class=\"card\">
   <img src=\"{{region.imagen}}\" class=\"card-img-top\" >
