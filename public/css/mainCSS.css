@@ -73,11 +73,6 @@ footer{
     text-align: center;
 }
 
-#botones{
-    display: flex;
-    justify-content: center;
-}
-
 #garen{
     height: 400px;
     width: 550px;
@@ -90,3 +85,31 @@ footer{
 #contenedor_saber{
     visibility: hidden;
 }
+#botones {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+   }
+   
+   #botones:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+   }
+   
+   #botones:active {
+    transform: scale(0.9);
+   }
+  
