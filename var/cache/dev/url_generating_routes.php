@@ -18,6 +18,7 @@ return [
     'app_logout' => [[], ['_controller' => 'App\\Controller\\LoginController::logout'], [], [['text', '/logout']], [], [], []],
     'Inicio' => [[], ['_controller' => 'App\\Controller\\PageController::inicio'], [], [['text', '/']], [], [], []],
     'Busqueda' => [['texto'], ['_controller' => 'App\\Controller\\PageController::buscar'], [], [['variable', '/', '[^/]++', 'texto', true], ['text', '/buscar']], [], [], []],
+    'Galeria' => [[], ['_controller' => 'App\\Controller\\PageController::galeria'], [], [['text', '/galeria']], [], [], []],
     'Personajes' => [[], ['_controller' => 'App\\Controller\\PersonajesController::inicio'], [], [['text', '/personajes']], [], [], []],
     'regiones' => [['texto', 'id'], ['_controller' => 'App\\Controller\\RegionesController::index'], [], [['variable', '/', '[^/]++', 'id', true], ['variable', '/', '[^/]++', 'texto', true], ['text', '/region']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],

@@ -16,6 +16,7 @@ return [
         '/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\LoginController::index'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\LoginController::logout'], null, ['GET' => 0], null, false, false, null]],
         '/' => [[['_route' => 'Inicio', '_controller' => 'App\\Controller\\PageController::inicio'], null, null, null, false, false, null]],
+        '/galeria' => [[['_route' => 'Galeria', '_controller' => 'App\\Controller\\PageController::galeria'], null, null, null, false, false, null]],
         '/personajes' => [[['_route' => 'Personajes', '_controller' => 'App\\Controller\\PersonajesController::inicio'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
     ],

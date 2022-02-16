@@ -1,6 +1,10 @@
 $(document).ready(function (){
-    
-    $("#show").click(function (){$("#img").show(2500)})
-    $("#hide").click(function (){$("#img").hide("slow")})
+    $("#garen").hide();
+    $("#show").click(function (){
+        $("#garen").show(2500)
+    })
+    $("#hide").click(function (){
+        $("#garen").hide("slow")
+    })
 
     });

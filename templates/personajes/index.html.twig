@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Inicio!{% endblock %}
+{% block title %}Personajes!{% endblock %}
 
 {% block body %}
 {{include ("/partials/navbar.html.twig")}}
@@ -14,60 +14,49 @@
 
 <!--acordeon info-->
 <div id="accordion">
- <h3>Section 1</h3>
+ <h3>Adivina el personaje!</h3>
  <div>
    <p>
-   Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-   ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-   amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-   odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+   Como ya te habrás dado cuenta, este mini juego trata de adivinar el personaje, voy a darte 3 pistas,
+   cada una más obvia que la anterior, a ver cuanto tardas en adivinar de que campeón estamos hablando
    </p>
  </div>
- <h3>Section 2</h3>
+ <h3>Pista 1</h3>
  <div>
    <p>
-   Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-   purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-   velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-   suscipit faucibus urna.
+   Su daño es AD
    </p>
  </div>
- <h3>Section 3</h3>
+ <h3>Pista 2</h3>
  <div>
    <p>
-   Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-   Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-   ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-   lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+  Utiliza una de estas armas afiladas :
    </p>
    <ul>
-     <li>List item one</li>
-     <li>List item two</li>
-     <li>List item three</li>
+     <li>Espada</li>
+     <li>Cuchillas</li>
+     <li>Pistola</li>
    </ul>
  </div>
- <h3>Section 4</h3>
+ <h3>Pista 3</h3>
  <div>
    <p>
-   Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-   et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-   faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-   mauris vel est.
+   Es de la región justiciera, Demacia!
    </p>
-   <p>
-   Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-   Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-   inceptos himenaeos.
-   </p>
+  
  </div>
 </div>
 <!--acordeon info-->
 
 <!-- imagen_oculta -->
+<h1 id="adivinado">¿Ya lo has adivinado? Revela el personaje..!</h1>
+  <div id="botones">
     <button id="show">Mostrar Imagen</button>
     <button id="hide">Ocultar Imagen</button>
-
-    <img src="/media/garen.jpg" style="display:none;"  height="300" width="250" id="img">
+  </div>
+  <div class="image-garen-flex">
+    <img src="/media/garen.jpg" id="garen">
+  </div>
 <!-- imagen_oculta -->
 
 {{include ("/partials/footer.html.twig")}}

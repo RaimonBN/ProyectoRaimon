@@ -34,9 +34,22 @@ class PageController extends AbstractController
     public function buscar(ManagerRegistry $doctrine, $texto): Response{
        
         $repositorio = $doctrine->getRepository(Personajes::class);
+        
         $personajes = $repositorio->findByName($texto);
-
+    
         return $this->render('lista_personajes.html.twig', ['personajes' => $personajes]);
+    }
+     /**
+     * @Route("/galeria", name="Galeria")
+     */
+        
+    public function galeria(ManagerRegistry $doctrine): Response
+    {
+       
+        return $this->render('galeria.html.twig', [
+            'controller_name' => 'PageController',
+           
+        ]);
     }
 
 }

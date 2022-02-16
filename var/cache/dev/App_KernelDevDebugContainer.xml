@@ -6150,11 +6150,12 @@
         <argument key="userPasswordHasher" type="service_closure" id="security.user_password_hasher"/>
       </argument>
     </service>
-    <service id=".service_locator.yaYznTC" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.dnps0Pk" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\LoginController::index" type="service_closure" id=".service_locator.UDgw6Ol"/>
         <argument key="App\Controller\PageController::buscar" type="service_closure" id=".service_locator.T7xmfzk"/>
+        <argument key="App\Controller\PageController::galeria" type="service_closure" id=".service_locator.T7xmfzk"/>
         <argument key="App\Controller\PageController::inicio" type="service_closure" id=".service_locator.T7xmfzk"/>
         <argument key="App\Controller\PersonajesController::inicio" type="service_closure" id=".service_locator.T7xmfzk"/>
         <argument key="App\Controller\RegionesController::index" type="service_closure" id=".service_locator.T7xmfzk"/>
@@ -6167,6 +6168,7 @@
         <argument key="kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
         <argument key="App\Controller\LoginController:index" type="service_closure" id=".service_locator.UDgw6Ol"/>
         <argument key="App\Controller\PageController:buscar" type="service_closure" id=".service_locator.T7xmfzk"/>
+        <argument key="App\Controller\PageController:galeria" type="service_closure" id=".service_locator.T7xmfzk"/>
         <argument key="App\Controller\PageController:inicio" type="service_closure" id=".service_locator.T7xmfzk"/>
         <argument key="App\Controller\PersonajesController:inicio" type="service_closure" id=".service_locator.T7xmfzk"/>
         <argument key="App\Controller\RegionesController:index" type="service_closure" id=".service_locator.T7xmfzk"/>
@@ -6710,12 +6712,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.yaYznTC"/>
+      <argument type="service" id=".service_locator.dnps0Pk"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.yaYznTC"/>
+      <argument type="service" id=".service_locator.dnps0Pk"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -7585,7 +7587,7 @@
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.yaYznTC"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.dnps0Pk"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -7606,7 +7608,7 @@
     <service id="Psr\Log\LoggerInterface $debugLogger" alias="monolog.logger.debug"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
     <service id=".service_locator.Dby0_1s" alias=".service_locator.4u5os03"/>
-    <service id=".service_locator.Tl_bm.t" alias=".service_locator.yaYznTC"/>
+    <service id=".service_locator.iMsbQDm" alias=".service_locator.dnps0Pk"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.yj07qm_" alias=".service_locator.ZyXYEQR"/>
     <service id=".service_locator.4hi2aOY" alias=".service_locator.bBRwv06"/>
