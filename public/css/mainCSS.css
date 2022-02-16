@@ -52,6 +52,7 @@ body{
     background-image: url("../media/lolfondo.webp");
     background-size:auto;
 }
+
 footer{
     width: 100%;
     bottom:auto;
@@ -86,4 +87,6 @@ footer{
     display: flex;
     justify-content: center;
 }
-
+#contenedor_saber{
+    visibility: hidden;
+}

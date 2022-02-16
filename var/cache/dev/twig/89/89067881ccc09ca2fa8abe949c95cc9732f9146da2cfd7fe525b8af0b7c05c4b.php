@@ -62,13 +62,13 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
         ";
         // line 17
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 28
+        // line 27
         echo "    </head>
     <body>
       ";
-        // line 30
+        // line 29
         $this->displayBlock('body', $context, $blocks);
-        // line 34
+        // line 33
         echo "    </body>
 </html>
 
@@ -144,8 +144,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
     <script type=\"text/javascript\" src=\"/js/arcaneAjax.js\"></script>
     <script type=\"text/javascript\" src=\"/js/accordition.js\"></script>
     <script type=\"text/javascript\" src=\"/js/imagen.js\"></script>
-    <script type=\"text/javascript\" src=\"/js/oscuro.js\"></script>
-
+    <script type=\"text/javascript\" src=\"/js/animacion.js\"></script>
     ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -155,7 +154,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
     }
 
-    // line 30
+    // line 29
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -165,7 +164,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 31
+        // line 30
         echo "    ";
         echo twig_include($this->env, $context, "partials/footer.html.twig");
         echo "
@@ -186,7 +185,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
 
     public function getDebugInfo()
     {
-        return array (  169 => 31,  159 => 30,  140 => 18,  130 => 17,  114 => 9,  104 => 8,  85 => 5,  72 => 34,  70 => 30,  66 => 28,  64 => 17,  61 => 16,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  168 => 30,  158 => 29,  140 => 18,  130 => 17,  114 => 9,  104 => 8,  85 => 5,  72 => 33,  70 => 29,  66 => 27,  64 => 17,  61 => 16,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -215,8 +214,7 @@ class __TwigTemplate_d5aa178b6077c0ecab5255eeedaebc118d1d142295197aaf1b90c3e3ccb
     <script type=\"text/javascript\" src=\"/js/arcaneAjax.js\"></script>
     <script type=\"text/javascript\" src=\"/js/accordition.js\"></script>
     <script type=\"text/javascript\" src=\"/js/imagen.js\"></script>
-    <script type=\"text/javascript\" src=\"/js/oscuro.js\"></script>
-
+    <script type=\"text/javascript\" src=\"/js/animacion.js\"></script>
     {% endblock %}
     </head>
     <body>

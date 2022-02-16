@@ -8,6 +8,9 @@ onload = function(){
 
     document.getElementById("arcane_boton").onclick = sacardatos
 
+    $("#arcane_boton").click(()=>{
+        $("#contenedor_saber").css("visibility","visible");
+    })
 }
 
     function sacardatos(){
@@ -28,4 +31,4 @@ onload = function(){
         request.send(null);
     }
 }
-                                      
+

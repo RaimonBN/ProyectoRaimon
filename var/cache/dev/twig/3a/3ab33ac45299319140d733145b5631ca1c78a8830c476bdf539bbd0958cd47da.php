@@ -138,7 +138,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
 <!-- INFO ARCANE -->
 <input type=\"button\" id=\"arcane_boton\" value=\"Arcane\">
-<div id=\"contenedor_saber\" style=\"background-color:#bfa6a2;\">
+<div id=\"contenedor_saber\" style=\"background-color:#bfa6a2; padding:10px; border-style:solid;\">
   </div>
 <!-- INFO ARCANE -->
 </div>
@@ -209,7 +209,7 @@ class __TwigTemplate_fca3a63ce7f2647b8c0a0d142d55ab9def2a31dc81ee3c2b952df07c3aa
 
 <!-- INFO ARCANE -->
 <input type=\"button\" id=\"arcane_boton\" value=\"Arcane\">
-<div id=\"contenedor_saber\" style=\"background-color:#bfa6a2;\">
+<div id=\"contenedor_saber\" style=\"background-color:#bfa6a2; padding:10px; border-style:solid;\">
   </div>
 <!-- INFO ARCANE -->
 </div>

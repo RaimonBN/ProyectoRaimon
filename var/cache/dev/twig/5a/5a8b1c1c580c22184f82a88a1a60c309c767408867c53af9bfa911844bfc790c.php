@@ -53,18 +53,13 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
           <a class=\"nav-link\" href=\"/personajes\">Personajes</a>
         </li>   
       </ul>
-       <ul class=\"navbar-nav\">
-        <li class=\"nav-item\">
-          <button id=\"botonOscuro\">Modo oscuro!</button>
-        </li>   
-      </ul>
   
     </div>
     
       ";
-        // line 22
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 22, $this->source); })()), "user", [0 => "IS_AUTHENTICATED_FULLY"], "method", false, false, false, 22)) {
-            // line 23
+        // line 17
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 17, $this->source); })()), "user", [0 => "IS_AUTHENTICATED_FULLY"], "method", false, false, false, 17)) {
+            // line 18
             echo "        <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
         <a class=\"nav-link\" href=\"/logout\">Cierra sesión!</a>
@@ -72,7 +67,7 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
       </ul>
       ";
         } else {
-            // line 29
+            // line 24
             echo "      <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
         <a class=\"nav-link\" href=\"/login\">Inicia sesión!</a>
@@ -80,7 +75,7 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
       </ul>
       ";
         }
-        // line 35
+        // line 30
         echo "    <div>
       <form class=\"form-inline my-2 my-lg-0\" style=\"display:flex\">
       <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Busca personajes\" aria-label=\"Search\" id=\"texto_buscador\">
@@ -110,7 +105,7 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
 
     public function getDebugInfo()
     {
-        return array (  84 => 35,  76 => 29,  68 => 23,  66 => 22,  43 => 1,);
+        return array (  79 => 30,  71 => 24,  63 => 18,  61 => 17,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -126,11 +121,6 @@ class __TwigTemplate_604a7c4e4680ea3c061c3a9cf724388412e5f5e5b94e2876a454d9a2971
       <ul class=\"navbar-nav\">
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"/personajes\">Personajes</a>
-        </li>   
-      </ul>
-       <ul class=\"navbar-nav\">
-        <li class=\"nav-item\">
-          <button id=\"botonOscuro\">Modo oscuro!</button>
         </li>   
       </ul>
   
