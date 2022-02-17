@@ -9,7 +9,7 @@
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 
     {% endif %}
-
+    <h1>Iniciar Sesión</h1>
     <form action="{{ path('login') }}" method="post">
 
         <label for="username">Email:</label>
@@ -27,5 +27,5 @@
         <button type="submit">Iniciar Sesión</button>
         No estás registrado?? <a href="/register">Regístrate</a>
     </form>
-    {{include ('partials/footer.html.twig')}}
+    
 {% endblock %}
