@@ -113,4 +113,48 @@ footer{
     transform: scale(0.9);
    }
   
+   #registro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+   }
+
+   #email{
+    margin-bottom: 20px;
+   }
+
+   #boton-registro{
+       margin-top: 20px;
+       
+    
+   }
+   #titulo-registro{
+       position: relative; 
+       display: flex;
+       justify-content: center;
+       padding-top: 50px;
+   }
+
+   #iniciar-titulo{
+       position: relative;
+       display: flex;
+       justify-content: center;
+       padding-top: 50px;
+   }
+
+   #login-form{
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       max-width: 300px;
+       margin: auto;
+      
+   }
+   #boton-iniciar{
+       margin-top: 20px;
+       margin-bottom: 10px;
+   }
+   
    

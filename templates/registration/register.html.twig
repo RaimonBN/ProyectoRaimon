@@ -4,17 +4,21 @@
 
 {% block body %}
 {{include ('partials/navbar.html.twig')}}
-    <h1>Registro</h1>
-
+    
+    <h1 id="titulo-registro">Registro</h1>
+    <div id="registro">
     {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.email, {
+            "id" : "email",
+            label: 'Correo electrónico  '
+        }) }}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Contraseña'
         }) }}
         
 
-        <button type="submit">Regístrate</button>
-        Ya estás registrado?? <a href="/login">Inicia sesión</a>
+        <button id="boton-registro"type="submit">Regístrate</button> 
     {{ form_end(registrationForm) }}
-    
+    Ya estás registrado?? <a href="/login">Inicia sesión</a>
+        </div>
 {% endblock %}

@@ -9,8 +9,8 @@
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 
     {% endif %}
-    <h1>Iniciar Sesión</h1>
-    <form action="{{ path('login') }}" method="post">
+    <h1 id="iniciar-titulo">Iniciar Sesión</h1>
+    <form id="login-form" action="{{ path('login') }}" method="post">
 
         <label for="username">Email:</label>
 
@@ -24,7 +24,7 @@
 
         <input type="hidden" name="_target_path" value="/account"/> #}
 
-        <button type="submit">Iniciar Sesión</button>
+        <button id="boton-iniciar"type="submit">Iniciar Sesión</button>
         No estás registrado?? <a href="/register">Regístrate</a>
     </form>
     
